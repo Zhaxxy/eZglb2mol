@@ -8,4 +8,4 @@ also that would mean you would have to get a lbp1 pod.mol to compress it as its 
 
 THIS IS VERY BAD, IF I WAS YOU I WOULD JUST WAIT UNTILL WORKBENCH IS PUBLIC
 
-some of this code is not by me, spefically the vertex normals code which is by ennou
+some of this code is not by me, spefically the vertex normals code which is by ennuo
