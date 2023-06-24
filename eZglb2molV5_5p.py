@@ -415,8 +415,18 @@ def connectedpb4():
     yourhash.configure(foreground="blue")
     yourhash.place(relx=0.96, rely=0.45, anchor='e')
 
+    def set_bone_id():
+        global costume_boneID
+        
+        userconstumeboneid = set_bone_id_entry.get().lower()
+        print('User chose the bone id:',userconstumeboneid)
+        costume_boneID = userconstumeboneid
 
-
+    set_bone_id_button = Button(changehash, text = 'DEBUG set bone id',font=('', 12),command=set_bone_id)
+    set_bone_id_button.place(relx=0.7, rely=0.8, anchor='e')
+    
+    set_bone_id_entry = Entry(changehash)
+    set_bone_id_entry.place(relx=0.8, rely=0.8, width=20, anchor='e')
 
     okhash = Button(changehash, text ="Okay", font=('', 12), command=checkactualhash)
     okhash.place(relx=0.1, rely=0.8, anchor='e')
@@ -964,8 +974,18 @@ def non_rigged5_5p():
     yourhash.configure(foreground="blue")
     yourhash.place(relx=0.96, rely=0.45, anchor='e')
 
+    def set_bone_id():
+        global costume_boneID
+        
+        userconstumeboneid = set_bone_id_entry.get().lower()
+        print('User chose the bone id:',userconstumeboneid)
+        costume_boneID = userconstumeboneid
 
-
+    set_bone_id_button = Button(changehash, text = 'DEBUG set bone id',font=('', 12),command=set_bone_id)
+    set_bone_id_button.place(relx=0.7, rely=0.8, anchor='e')
+    
+    set_bone_id_entry = Entry(changehash)
+    set_bone_id_entry.place(relx=0.8, rely=0.8, width=20, anchor='e')
 
     okhash = Button(changehash, text ="Okay", font=('', 12), command=checkactualhash)
     okhash.place(relx=0.1, rely=0.8, anchor='e')
@@ -1384,13 +1404,4 @@ bsac.place(height = 50, width = 450, rely=0.68,relx=0.05)
 
 maingui.protocol("WM_DELETE_WINDOW", quitandclean)
 
-
-
-
 maingui.mainloop()
-
-
-
-
-
-
